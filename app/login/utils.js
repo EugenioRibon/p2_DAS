@@ -3,7 +3,9 @@ export const doLogin = async (username, password) => {
         "https://das-p2-backend.onrender.com/api/users/login/",
         {
             method: "POST",
-            headers: {"Content-Type": "application/json"},
+            headers: {
+                "Content-Type": "application/json",
+            },
             body: JSON.stringify({ username, password })
         }
     );
